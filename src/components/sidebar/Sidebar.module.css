@@ -1,0 +1,8 @@
+.sidebar{
+  width: 256px;
+  height: 100vh;
+  background-color: gray;
+  color: black;
+  padding: 20px;
+  justify-content: left;
+}
