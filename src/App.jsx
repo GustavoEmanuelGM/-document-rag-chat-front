@@ -1,4 +1,4 @@
-
+import Header from './components/Header'
 import './App.css'
 import Sidebar from './components/sidebar'
 
@@ -6,7 +6,9 @@ function App() {
 
   return (
     <>
-      <Sidebar/>
+      
+      <Sidebar/> 
+
     </>
   )
 }

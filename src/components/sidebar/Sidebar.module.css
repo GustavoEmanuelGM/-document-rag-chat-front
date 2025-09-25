@@ -1,8 +1,74 @@
-.sidebar{
-  width: 256px;
-  height: 100vh;
-  background-color: gray;
+.sidebar {
+  width: 255px;
+  height: 100vh; 
+  background-color: #FAFAFA;
   color: black;
-  padding: 20px;
-  justify-content: left;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+/* título com logo e texto alinhados */
+.logoTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: 48px;
+}
+
+/* tamanho da imagem do ícone */
+.logoTitle img {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+
+.ctdSidebar {
+  display: flex;       
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.principal{
+  width: 52.83px;
+  height: 16.67px;
+  color: #766565;
+}
+
+.ctdSidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.navbtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: left;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navbtn img {
+  width: 18px;
+  height: 18px;
+}
+
+.navbtn:hover {
+  background: #f0f0f0;
+}
+
+.nav-btn.active {
+  background: white;/* azul */
+  color: #2563eb;
+  font-weight: bold;
 }
