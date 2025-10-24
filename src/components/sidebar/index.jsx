@@ -1,7 +1,7 @@
 
-import styles from "./Sidebar.module.css"; 
-import logo from "/logo.png"; 
-
+import styles from "./Sidebar.module.css";
+import logo from "/logo.png";
+import { Link, } from "react-router-dom";
 function Sidebar() {
   return (
     <aside className={styles.sidebar}>
@@ -13,11 +13,14 @@ function Sidebar() {
       <div className={styles.ctdSidebar}>
         <h5 className={styles.principal}>Principal</h5>
         <nav>
-          <button className={styles.navbtn}> Início </button>
-          <button className={styles.navbtn}> Documentos </button>
-          <button className={styles.navbtn}>  Tags </button>
+          <Link to="/" className={styles.navbtn}>  Início </Link>
+
+          <Link to="/documentos" className={styles.navbtn}> Documentos</Link>
+
+          <Link to="/tags" className={styles.navbtn}> Tags</Link>
         </nav>
       </div>
+      <button className={styles.navnew}> Novo + </button>
     </aside>
   );
 }
