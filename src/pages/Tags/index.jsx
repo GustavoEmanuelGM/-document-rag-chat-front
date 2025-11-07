@@ -1,8 +1,8 @@
-import Sidebar from "../../components/Sidebar"
+
 
 function Tags() {
   return(
-    <Sidebar />
+    <h1>Tags</h1>
   )
 }
 

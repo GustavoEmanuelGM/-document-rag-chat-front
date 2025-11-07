@@ -1,7 +1,8 @@
 
+import { NavLink } from "react-router-dom";
 import styles from "./Sidebar.module.css";
 import logo from "/logo.png";
-import { Link, } from "react-router-dom";
+
 function Sidebar() {
   return (
     <aside className={styles.sidebar}>
@@ -12,13 +13,27 @@ function Sidebar() {
 
       <div className={styles.ctdSidebar}>
         <h5 className={styles.principal}>Principal</h5>
-        <nav>
-          <Link to="/" className={styles.navbtn}>  Início </Link>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? styles.activeBtn : styles.btn)}
+        >
+          Início
+        </NavLink>
 
-          <Link to="/documentos" className={styles.navbtn}> Documentos</Link>
+        <NavLink
+          to="/documentos"
+          className={({ isActive }) => (isActive ? styles.activeBtn : styles.btn)}
+        >
+          Documentos
+        </NavLink>
 
-          <Link to="/tags" className={styles.navbtn}> Tags</Link>
-        </nav>
+        <NavLink
+          to="/tags"
+          className={({ isActive }) => (isActive ? styles.activeBtn : styles.btn)}
+        >
+          Tags
+        </NavLink>
+
       </div>
       <button className={styles.navnew}> Novo + </button>
     </aside>

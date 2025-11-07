@@ -1,8 +1,7 @@
-import Sidebar from "../../components/Sidebar"
 
 function Documentos() {
  return(
-    <Sidebar />
+    <div className="conteudo">conteudo</div>
   )
   
 }
