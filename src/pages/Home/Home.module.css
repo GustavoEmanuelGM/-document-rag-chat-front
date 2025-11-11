@@ -1,0 +1,25 @@
+.home {
+  padding: 24px;
+}
+
+.uploadList,
+.folderList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.uploadCard,
+.folderCard {
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+  transition: 0.2s ease;
+}
+
+.uploadCard:hover,
+.folderCard:hover {
+  border-color: #2563eb;
+  cursor: pointer;
+}

@@ -3,14 +3,14 @@ import Home from "./pages/Home";
 import Tags from "./pages/Tags";
 import Documentos from "./pages/Documentos";
 import Sidebar from "./components/sidebar";
-
+import "./App.css"
 
 function App() {
   return (
     <BrowserRouter>
-      <div>
+      <div className="main">
         <Sidebar />
-        <div >
+        <div className="conteudo">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/documentos" element={<Documentos />} />
