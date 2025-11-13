@@ -4,9 +4,9 @@ import { recentFoldersMock } from "../../mocks/foldersMock";
 function Home() {
   return (
     <div className={styles.home}>
-       <h2>Pastas recentes</h2>
-
+       
       <div className={styles.folderList}>
+        <h2>Pastas recentes</h2>
         {recentFoldersMock.map(folder => (
           <div key={folder.id} className={styles.folderCard}>
             <p>{folder.name}</p>
@@ -15,9 +15,10 @@ function Home() {
         ))}
       </div>
 
-      <h2>Últimos uploads</h2>
+      
 
       <div className={styles.uploadList}>
+        <h2>Últimos uploads</h2>
         {uploadsMock.map(file => (
           <div key={file.id} className={styles.uploadCard}>
             <p>{file.name}</p>

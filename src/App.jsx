@@ -4,13 +4,15 @@ import Tags from "./pages/Tags";
 import Documentos from "./pages/Documentos";
 import Sidebar from "./components/sidebar";
 import "./App.css"
+import Header from "./components/Header";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="main">
-        <Sidebar />
+        <Sidebar /> 
         <div className="conteudo">
+          <Header />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/documentos" element={<Documentos />} />
