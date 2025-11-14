@@ -1,4 +1,4 @@
-export const recentFoldersMock = [
+export const FoldersMock = [
   {
     id: 1,
     name: "Contratos 2024",

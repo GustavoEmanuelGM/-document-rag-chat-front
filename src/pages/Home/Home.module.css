@@ -2,32 +2,19 @@
   padding: 24px;
 }
 
+.sectionTitle {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
 
-.folderList {
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 16px;
 }
-.uploadList {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  
-}
-.uploadCard{
-  padding: 16px;
-  background-color: white;
-  border-radius: 8px;
-  border: 1px solid #E5E7EB;
-  transition: 0.2s ease;
-}
 
-.folderCard {
-  padding: 16px;
-  background: #ffffff;
-  border-radius: 8px;
-  border: 1px solid #E5E7EB;
-  transition: 0.2s ease;
-}
 
 .uploadCard:hover,
 .folderCard:hover {
