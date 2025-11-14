@@ -58,19 +58,36 @@
   gap: 16px;
 }
 
-.icon {
-  color: #6b7280;
-  font-size: 18px;
+.userActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.iconButton {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 50%;
+  background: white;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.iconButton:hover {
+  background: #f3f4f6;
+  border-color: #2563eb;
 }
 
 .avatar {
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
+  object-fit: cover;
   cursor: pointer;
-  border: 2px solid transparent;
-  transition: border 0.2s;
 }
 
 .avatar:hover {
