@@ -1,0 +1,26 @@
+.tag {
+  display: inline-block;
+  width: auto;
+  flex: 0;
+  white-space: nowrap;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+
+.contrato {
+  background: #e6f0ff;
+  color: #2264e5;
+}
+
+.livro {
+  background: #e8f9ee;
+  color: #2b8a47;
+}
+
+.rpg {
+  background: #ffeceb;
+  color: #c53d38;
+}

@@ -8,7 +8,7 @@ export const uploadsMock = [
   },
   {
     id:2,
-    name: "Contrato de aluguel.pdf",
+    name: "D&D Manual do jogador.pdf",
     tag:"RPG",
     size:"2.4 MB",
     modified: "11 Fev, 2025"
@@ -22,7 +22,7 @@ export const uploadsMock = [
   },
   {
     id:4,
-    name: "Trader milionmário.pdf",
+    name: "Trader milionário.pdf",
     tag:"Livro",
     size:"2.4 MB",
     modified: "11 Fev, 2025"

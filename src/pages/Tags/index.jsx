@@ -1,9 +1,7 @@
+import styles from "./Tags.module.css";
 
-
-function Tags() {
-  return(
-    <h1>Tags</h1>
-  )
+function Tags({ label, type }) {
+  return <span className={`${styles.tag} ${styles[type]}`}>{label}</span>;
 }
 
-export default Tags
+export default Tags;

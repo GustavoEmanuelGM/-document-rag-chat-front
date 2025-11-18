@@ -1,7 +1,15 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .icon {
@@ -10,11 +18,14 @@
 }
 
 .name {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
 }
 
 .size {
-  font-size: 13px;
+  flex: 0;
+  font-size: 12px;
   opacity: 0.6;
+  white-space: nowrap;
 }
+
