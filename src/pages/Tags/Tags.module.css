@@ -7,20 +7,21 @@
   padding: 4px 8px;
   border-radius: 8px;
   font-weight: 500;
+  
 }
 
 
 .contrato {
   background: #e6f0ff;
-  color: #2264e5;
+  color: #1447E6;
 }
 
 .livro {
   background: #e8f9ee;
-  color: #2b8a47;
+  color: #008236;
 }
 
 .rpg {
   background: #ffeceb;
-  color: #c53d38;
+  color: #C10007;
 }

@@ -14,11 +14,13 @@
 
 .icon {
   font-size: 22px;
-  opacity: 0.5;
+  
 }
 
+
+
 .name {
-  font-size: 12px;
+  font-size: 12px;  
   font-weight: 500;
 }
 
@@ -29,3 +31,17 @@
   white-space: nowrap;
 }
 
+
+
+/* Cores por tipo */
+.rpg {
+  color: #C10007;
+}
+
+.livro {
+  color: #008236;  
+}
+
+.contrato {
+  color: #1447E6;  
+}
