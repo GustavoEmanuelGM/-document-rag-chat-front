@@ -17,6 +17,18 @@
   
 }
 
+.gridCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.listCard {
+  display: grid;
+  grid-template-columns: 30px 1fr 150px;
+  align-items: center;
+  gap: 16px;
+}
 
 
 .name {

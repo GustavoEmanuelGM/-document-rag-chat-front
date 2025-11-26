@@ -31,11 +31,17 @@ function Home() {
       <div className={styles.upfile}>
         <h3>Últimos uploads</h3>
         <div>
-          <button onClick={() => setViewMode("grid")}>
+          <button
+            className={`${styles.toggleBtn} ${viewMode === "grid" ? styles.active : ""}`}
+            onClick={() => setViewMode("grid")}
+          >
             <IoGridOutline />
           </button>
 
-          <button onClick={() => setViewMode("list")}>
+          <button
+            className={`${styles.toggleBtn} ${viewMode === "list" ? styles.active : ""}`}
+            onClick={() => setViewMode("list")}
+          >
             <CiBoxList />
           </button>
         </div>
