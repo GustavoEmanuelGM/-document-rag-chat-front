@@ -8,6 +8,13 @@
   font-size: 20px;
   font-weight: 600;
 }
+.topcard {
+  display: flex;
+}
+
+.topcard h3 {
+  flex: 1;
+}
 
 .toggleBtn {
   height: 32px;

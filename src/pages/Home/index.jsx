@@ -29,22 +29,25 @@ function Home() {
 
 
       <div className={styles.upfile}>
-        <h3>Últimos uploads</h3>
-        <div>
-          <button
-            className={`${styles.toggleBtn} ${viewMode === "grid" ? styles.active : ""}`}
-            onClick={() => setViewMode("grid")}
-          >
-            <IoGridOutline />
-          </button>
+        <div className={styles.topcard}>
+          <h3>Últimos uploads</h3>
+          <div>
+            <button
+              className={`${styles.toggleBtn} ${viewMode === "grid" ? styles.active : ""}`}
+              onClick={() => setViewMode("grid")}
+            >
+              <IoGridOutline />
+            </button>
 
-          <button
-            className={`${styles.toggleBtn} ${viewMode === "list" ? styles.active : ""}`}
-            onClick={() => setViewMode("list")}
-          >
-            <CiBoxList />
-          </button>
+            <button
+              className={`${styles.toggleBtn} ${viewMode === "list" ? styles.active : ""}`}
+              onClick={() => setViewMode("list")}
+            >
+              <CiBoxList />
+            </button>
+          </div>
         </div>
+       
 
         {viewMode === "grid" && ( 
         <div className={styles.grid}>
