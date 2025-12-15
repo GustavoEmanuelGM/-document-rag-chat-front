@@ -49,32 +49,22 @@ function Home() {
         </div>
        
 
-        {viewMode === "grid" && ( 
-        <div className={styles.grid}>
+        
+        <div className={viewMode === "list" ? styles.list : styles.grid}>
           {uploadsMock.map(file => (
             <UploadCard
               key={file.id}
               name={file.name}
               tag={file.tag}
               size={file.size}
+              listView={viewMode === "List"}
             />
           ))}
         </div>
-        )}
+        
       
-        {viewMode === "list" && (
-          <div className={styles.list}>
-          {uploadsMock.map(file => (
-            <UploadCard
-              key={file.id}
-              name={file.name}
-              tag={file.tag}
-              size={file.size}
-            />
-          ))}
-        </div>
-        )}
-      
+        
+        
       </div>
 
 
