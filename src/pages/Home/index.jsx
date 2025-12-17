@@ -51,13 +51,24 @@ function Home() {
 
         
         <div className={viewMode === "list" ? styles.list : styles.grid}>
+          {viewMode === "list" && (
+            <div className={styles.listHeader}>
+              <span></span>
+              <span>Nome</span>
+              <span>Tag</span>
+              <span>Tamanho</span>
+              <span>Modificado</span>
+              <span></span>
+            </div>
+          )}
+
           {uploadsMock.map(file => (
             <UploadCard
               key={file.id}
               name={file.name}
               tag={file.tag}
               size={file.size}
-              listView={viewMode === "List"}
+              listView={viewMode === "list"}
             />
           ))}
         </div>

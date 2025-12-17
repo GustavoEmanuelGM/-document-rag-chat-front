@@ -1,7 +1,7 @@
-.container {
+.gridCard {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   width: 100%;
 }
 
@@ -14,43 +14,36 @@
 
 .icon {
   font-size: 22px;
-  
-}
-
-.gridCard {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 .listCard {
   display: grid;
-  grid-template-columns: 
-  30px 
-  1fr 
-  150px
-  130px;
+  grid-template-columns:
+    32px
+    1fr
+    140px
+    100px
+    120px;
+
   align-items: center;
   gap: 16px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
 }
-
 
 .name {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 12px;  
+  font-size: 12px;
   font-weight: 500;
 }
 
 .size {
-  flex: 0;
   font-size: 12px;
   opacity: 0.6;
   white-space: nowrap;
 }
-
-
 
 /* Cores por tipo */
 .rpg {
@@ -58,9 +51,9 @@
 }
 
 .livro {
-  color: #008236;  
+  color: #008236;
 }
 
 .contrato {
-  color: #1447E6;  
+  color: #1447E6;
 }
