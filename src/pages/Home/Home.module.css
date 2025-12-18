@@ -50,10 +50,11 @@
 }
 
 .list {
+  height: 40px;
   width: 1080px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  
 }
 
 

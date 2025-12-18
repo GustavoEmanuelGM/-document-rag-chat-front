@@ -13,7 +13,15 @@
 }
 
 .icon {
+  flex-shrink: 0;
+}
+
+.iconGrid {
   font-size: 22px;
+}
+
+.iconList {
+  font-size: 16px;
 }
 
 .listCard {

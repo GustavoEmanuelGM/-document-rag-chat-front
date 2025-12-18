@@ -36,7 +36,12 @@ function UploadCard({ name, tag, size, listView }) {
   return (
     <CardBase>
       <div className={styles.gridCard}>
-        <FaRegFileLines className={`${styles.icon} ${styles[tag.toLowerCase()]}`} />
+        <FaRegFileLines className={`
+        ${styles.icon} 
+        ${styles[tag.toLowerCase()]}
+        ${listView ? styles.iconList : styles.iconGrid}
+        `}
+      />
         <p className={styles.name}>{name}</p>
 
         <div className={styles.info}>
