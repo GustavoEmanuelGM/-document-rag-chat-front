@@ -31,6 +31,7 @@ function Home() {
       <div className={styles.upfile}>
         <div className={styles.topcard}>
           <h3>Últimos uploads</h3>
+
           <div>
             <button
               className={`${styles.toggleBtn} ${viewMode === "grid" ? styles.active : ""}`}
@@ -47,11 +48,10 @@ function Home() {
             </button>
           </div>
         </div>
-       
 
-        
-        <div className={viewMode === "list" ? styles.list : styles.grid}>
-          {viewMode === "list" && (
+        {/* LIST MODE */}
+        {viewMode === "list" && (
+          <div className={styles.listWrapper}>
             <div className={styles.listHeader}>
               <span></span>
               <span>Nome</span>
@@ -60,22 +60,34 @@ function Home() {
               <span>Modificado</span>
               <span></span>
             </div>
-          )}
 
-          {uploadsMock.map(file => (
-            <UploadCard
-              key={file.id}
-              name={file.name}
-              tag={file.tag}
-              size={file.size}
-              listView={viewMode === "list"}
-            />
-          ))}
-        </div>
-        
-      
-        
-        
+            <div className={styles.listBody}>
+              {uploadsMock.map(file => (
+                <UploadCard
+                  key={file.id}
+                  name={file.name}
+                  tag={file.tag}
+                  size={file.size}
+                  listView
+                />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* GRID MODE */}
+        {viewMode === "grid" && (
+          <div className={styles.grid}>
+            {uploadsMock.map(file => (
+              <UploadCard
+                key={file.id}
+                name={file.name}
+                tag={file.tag}
+                size={file.size}
+              />
+            ))}
+          </div>
+        )}
       </div>
 
 
