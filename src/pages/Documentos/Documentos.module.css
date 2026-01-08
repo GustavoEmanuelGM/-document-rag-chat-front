@@ -1,3 +1,96 @@
-.conteudo{
-  background-color: red;
+.documents {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+}
+
+
+
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.header span {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* ===== BOTÕES GRID / LIST ===== */
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.toggleBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.toggleBtn svg {
+  font-size: 18px;
+}
+
+.toggleBtn:hover {
+  background: #f9fafb;
+}
+
+.active {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+/* ===== GRID ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* ===== LIST ===== */
+.list {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* HEADER DA LISTA */
+.listHeader {
+  display: grid;
+  grid-template-columns:
+    32px
+    1fr
+    140px
+    100px
+    140px
+    40px;
+
+  padding: 12px 16px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Alinhamento */
+.listHeader span {
+  display: flex;
+  align-items: center;
 }
