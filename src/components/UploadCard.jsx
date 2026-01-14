@@ -7,19 +7,23 @@ function UploadCard({ name, tag, size, listView }) {
   // ===== MODO LISTA =====
   if (listView) {
     return (
-      <div className={styles.listCard}>
-        <FaRegFileLines
-          className={`${styles.icon} ${styles[tag.toLowerCase()]} ${styles.listIcon}`}
-        />
+      <div className={styles.uploadWrapper}>
 
-        <span className={styles.name}>{name}</span>
 
-        <Tags label={tag} type={tag.toLowerCase()} />
+        <div className={styles.listCard}>
+          <FaRegFileLines
+            className={`${styles.icon} ${styles[tag.toLowerCase()]} ${styles.listIcon}`}
+          />
 
-        <span className={styles.size}>{size}</span>
+          <span className={styles.name}>{name}</span>
 
-        <span className={styles.date}>11 Fev, 2024</span>
+          <Tags label={tag} type={tag.toLowerCase()} />
 
+          <span className={styles.size}>{size}</span>
+
+          <span className={styles.date}>11 Fev, 2024</span>
+
+        </div>
       </div>
     );
   }

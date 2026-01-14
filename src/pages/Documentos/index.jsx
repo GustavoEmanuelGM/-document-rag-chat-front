@@ -54,7 +54,8 @@ function Documents() {
               <FolderCard
                 key={item.id}
                 name={item.name}
-                items={item.items}
+                tag={item.tag}
+                items={item.item}
                 listView={viewMode === "list"}
               />
             );

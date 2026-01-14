@@ -3,7 +3,11 @@ export const documentsMock = [
     id: 1,
     type: "folder",
     name: "Contratos 2024",
-    items: 12
+    tag:"contrato",
+    item:"10",
+    size: "2.4 MB",
+    date: "11 Fev, 2024",
+
   },
   {
     id: 2,

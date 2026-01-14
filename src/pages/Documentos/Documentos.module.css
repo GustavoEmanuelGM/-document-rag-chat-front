@@ -27,7 +27,7 @@
 /* ===== BOTÕES GRID / LIST ===== */
 .actions {
   display: flex;
-  gap: 8px;
+  
 }
 
 .toggleBtn {
@@ -55,6 +55,7 @@
   border-color: #2563eb;
   color: #fff;
 }
+
 
 /* ===== GRID ===== */
 .grid {
