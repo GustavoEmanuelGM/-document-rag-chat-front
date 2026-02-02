@@ -5,8 +5,16 @@
 
 .list {
   grid-template-columns: 40px 1fr 120px 120px 140px 40px;
-  gap: 12px;
+  height: 48px;          
+  padding: 0 16px;
+  align-items: center;
 }
+
+.list > * {
+  display: flex;
+  align-items: center;
+}
+
 
 .grid {
   display: flex;

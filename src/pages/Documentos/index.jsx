@@ -55,12 +55,13 @@ function Documents() {
                 key={item.id}
                 name={item.name}
                 tag={item.tag}
+                size={item.size}
                 items={item.item}
                 listView={viewMode === "list"}
               />
             );
           }
-
+          
           return (
             <UploadCard
               key={item.id}
