@@ -5,6 +5,8 @@ import UploadCard from "../../components/UploadCard";
 import styles from "./Documentos.module.css";
 import { IoGridOutline } from "react-icons/io5";
 import { CiBoxList } from "react-icons/ci";
+import { MdMoreHoriz } from "react-icons/md";
+
 
 function Documents() {
   const [viewMode, setViewMode] = useState("list");
@@ -31,6 +33,11 @@ function Documents() {
             onClick={() => setViewMode("list")}
           >
             <CiBoxList />
+          </button>
+          
+          <button className={styles.toggleBtn}>
+            <MdMoreHoriz />
+
           </button>
         </div>
       </div>

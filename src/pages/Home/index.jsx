@@ -6,6 +6,7 @@ import FolderCard from "../../components/FolderCard";
 import { useState } from "react";
 import { IoGridOutline } from "react-icons/io5";
 import { CiBoxList } from "react-icons/ci";
+import { MdMoreHoriz } from "react-icons/md";
 
 function Home() {
   const [viewMode, setViewMode] = useState("grid");
@@ -46,6 +47,12 @@ function Home() {
             >
               <CiBoxList />
             </button>
+
+            <button className={styles.toggleBtn}>
+            <MdMoreHoriz />
+
+            </button>
+
           </div>
         </div>
 
