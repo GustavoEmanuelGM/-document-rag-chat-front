@@ -19,6 +19,8 @@
 
 
 .actions {
+  display: flex;
+  align-items: center;
   gap: 4px;
 }
 
@@ -42,10 +44,45 @@
   background: #f9fafb;
 }
 
+
 .active {
   background: #2563eb;
   border-color: #2563eb;
   color: #fff;
+}
+
+.menuWrapper {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  padding: 4px;
+
+  min-width: 160px;
+  z-index: 10;
+}
+
+.menu button {
+  width: 100%;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.menu button:hover {
+  background-color: #f3f4f6;
 }
 
 .grid {

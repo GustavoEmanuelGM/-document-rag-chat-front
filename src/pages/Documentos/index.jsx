@@ -9,6 +9,7 @@ import { MdMoreHoriz } from "react-icons/md";
 
 
 function Documents() {
+  const [menuOpen, setMenuOpen] = useState(false);
   const [viewMode, setViewMode] = useState("list");
 
   return (
@@ -34,11 +35,22 @@ function Documents() {
           >
             <CiBoxList />
           </button>
-          
-          <button className={styles.toggleBtn}>
-            <MdMoreHoriz />
 
-          </button>
+          <div className={styles.menuWrapper}>
+            <button
+              className={`${styles.toggleBtn} ${menuOpen ? styles.active : ""}`}
+              onClick={() => setMenuOpen(prev => !prev)}>
+              <MdMoreHoriz />
+
+            </button>
+
+            {menuOpen && (
+              <div className={styles.menu}>
+                <button>Upload de arquivo</button>
+                <button>Editar</button>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 

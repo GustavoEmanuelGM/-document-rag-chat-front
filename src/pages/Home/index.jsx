@@ -9,6 +9,7 @@ import { CiBoxList } from "react-icons/ci";
 import { MdMoreHoriz } from "react-icons/md";
 
 function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
   const [viewMode, setViewMode] = useState("grid");
   return (
 
@@ -33,7 +34,7 @@ function Home() {
         <div className={styles.topcard}>
           <h3>Últimos uploads</h3>
 
-          <div>
+          <div className={styles.actions}>
             <button
               className={`${styles.toggleBtn} ${viewMode === "grid" ? styles.active : ""}`}
               onClick={() => setViewMode("grid")}
@@ -48,11 +49,21 @@ function Home() {
               <CiBoxList />
             </button>
 
-            <button className={styles.toggleBtn}>
-            <MdMoreHoriz />
+            <div className={styles.menuWrapper}>
+              <button
+                className={`${styles.toggleBtn} ${menuOpen ? styles.active : ""}`}
+                onClick={() => setMenuOpen(prev => !prev)}>
+                <MdMoreHoriz />
 
-            </button>
+              </button>
 
+              {menuOpen && (
+                <div className={styles.menu}>
+                  <button>Upload de arquivo</button>
+                  <button>Editar</button>
+                </div>
+              )}
+            </div>
           </div>
         </div>
 
