@@ -6,7 +6,8 @@ import styles from "./Documentos.module.css";
 import { IoGridOutline } from "react-icons/io5";
 import { CiBoxList } from "react-icons/ci";
 import { MdMoreHoriz } from "react-icons/md";
-
+import { FaCloudUploadAlt } from "react-icons/fa";
+import { RiFileEditFill } from "react-icons/ri";
 
 function Documents() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -40,14 +41,18 @@ function Documents() {
             <button
               className={`${styles.toggleBtn} ${menuOpen ? styles.active : ""}`}
               onClick={() => setMenuOpen(prev => !prev)}>
+                
               <MdMoreHoriz />
 
             </button>
 
             {menuOpen && (
               <div className={styles.menu}>
-                <button>Upload de arquivo</button>
-                <button>Editar</button>
+
+                <button> <RiFileEditFill />Editar</button>
+
+                <button> <FaCloudUploadAlt />Upload de arquivo</button>
+                
               </div>
             )}
           </div>

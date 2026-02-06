@@ -85,6 +85,35 @@
   background-color: #f3f4f6;
 }
 
+.menu button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: 100%;
+  padding: 10px 12px;
+
+  background: none;
+  border: none;
+  border-radius: 6px;
+
+  font-size: 14px;
+  line-height: 1;
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.menu button:hover {
+  background-color: #f3f4f6;
+}
+
+.menu svg{  
+  font-size: 20px;
+  flex-shrink: 0;
+  color: #3b82f6;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

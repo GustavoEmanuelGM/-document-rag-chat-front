@@ -7,6 +7,8 @@ import { useState } from "react";
 import { IoGridOutline } from "react-icons/io5";
 import { CiBoxList } from "react-icons/ci";
 import { MdMoreHoriz } from "react-icons/md";
+import { FaCloudUploadAlt } from "react-icons/fa";
+import { RiFileEditFill } from "react-icons/ri";
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -59,12 +61,16 @@ function Home() {
 
               {menuOpen && (
                 <div className={styles.menu}>
-                  <button>Upload de arquivo</button>
-                  <button>Editar</button>
+
+                  <button> <RiFileEditFill />Editar</button>
+
+                  <button> <FaCloudUploadAlt />Upload de arquivo</button>
+
                 </div>
               )}
             </div>
           </div>
+          
         </div>
 
         {/* LIST MODE */}
