@@ -29,12 +29,12 @@ function Sidebar() {
   }, []);
 
   const handleNewFolder = () => {
-    console.log("📁 Nova pasta");
+    console.log("Nova pasta");
     setMenuOpen(false);
   };
 
   const handleUploadFile = () => {
-    console.log("📤 Upload de arquivo");
+    console.log("Upload de arquivo");
     setMenuOpen(false);
   };
 

@@ -28,4 +28,3 @@ export const uploadsMock = [
     modified: "11 Fev, 2025"
   },
 ];
-
