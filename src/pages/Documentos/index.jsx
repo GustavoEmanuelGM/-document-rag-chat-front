@@ -41,7 +41,7 @@ function Documents() {
             <button
               className={`${styles.toggleBtn} ${menuOpen ? styles.active : ""}`}
               onClick={() => setMenuOpen(prev => !prev)}>
-                
+
               <MdMoreHoriz />
 
             </button>
@@ -52,7 +52,7 @@ function Documents() {
                 <button> <RiFileEditFill />Editar</button>
 
                 <button> <FaCloudUploadAlt />Upload de arquivo</button>
-                
+
               </div>
             )}
           </div>
@@ -62,43 +62,45 @@ function Documents() {
       {/* LIST / GRID */}
       <div className={viewMode === "list" ? styles.list : styles.grid}>
         {viewMode === "list" && (
-          <div className={styles.listHeader}>
-            <span></span>
-            <span>Nome</span>
-            <span>Tag</span>
-            <span>Tamanho</span>
-            <span>Modificado</span>
-            <span></span>
+          <div className={styles.listWrapper}>
+            <div className={styles.listHeader}>
+              <span></span>
+              <span>Nome</span>
+              <span>Tag</span>
+              <span>Tamanho</span>
+              <span>Modificado</span>
+              <span></span>
+            </div>
           </div>
         )}
 
-        {documentsMock.map(item => {
-          if (item.type === "folder") {
-            return (
-              <FolderCard
-                key={item.id}
-                name={item.name}
-                tag={item.tag}
-                size={item.size}
-                items={item.item}
-                listView={viewMode === "list"}
-              />
-            );
-          }
-          
-          return (
-            <UploadCard
-              key={item.id}
-              name={item.name}
-              tag={item.tag}
-              size={item.size}
-              listView={viewMode === "list"}
-            />
-          );
-        })}
-      </div>
+            {documentsMock.map(item => {
+              if (item.type === "folder") {
+                return (
+                  <FolderCard
+                    key={item.id}
+                    name={item.name}
+                    tag={item.tag}
+                    size={item.size}
+                    items={item.item}
+                    listView={viewMode === "list"}
+                  />
+                );
+              }
+
+              return (
+                <UploadCard
+                  key={item.id}
+                  name={item.name}
+                  tag={item.tag}
+                  size={item.size}
+                  listView={viewMode === "list"}
+                />
+              );
+            })}
+          </div>
     </div>
-  );
+      );
 }
 
-export default Documents;
+      export default Documents;
