@@ -2,6 +2,9 @@ import { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Sidebar.module.css";
 import logo from "/logo.png";
+import { FiHome } from "react-icons/fi";
+import { FaFileAlt } from "react-icons/fa";
+import { FaTag } from "react-icons/fa";
 import { MdOutlineDriveFolderUpload } from "react-icons/md";
 import { MdOutlineUploadFile } from "react-icons/md";
 
@@ -48,21 +51,21 @@ function Sidebar() {
           to="/"
           className={({ isActive }) => (isActive ? styles.activeBtn : styles.btn)}
         >
-          Início
+          <FiHome /> Início
         </NavLink>
 
         <NavLink
           to="/documentos"
           className={({ isActive }) => (isActive ? styles.activeBtn : styles.btn)}
         >
-          Documentos
+          <FaFileAlt /> Documentos
         </NavLink>
 
         <NavLink
           to="/tags"
           className={({ isActive }) => (isActive ? styles.activeBtn : styles.btn)}
         >
-          Tags
+          <FaTag /> Tags
         </NavLink>
       </div>
 

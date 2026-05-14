@@ -169,6 +169,30 @@
   color: #2563eb;
 }
 
+/* Estilização dos Ícones da Sidebar*/
+.btn svg,
+.activeBtn svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  transition: color 0.2s;
+}
+
+/* Cor padrão (inativo) */
+.btn svg {
+  color: #6b7280;
+}
+
+/* Cor quando ativo (segue o texto branco do botão ativo) */
+.activeBtn svg {
+  color: #ffffff;
+}
+
+/* Cor no hover (fica mais escuro, igual ao dropdown) */
+.btn:hover svg {
+  color: #374151;
+}
+
 /* Animação suave de entrada */
 @keyframes fadeInUp {
   from {
