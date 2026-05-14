@@ -82,9 +82,9 @@ function Home() {
               <span>Tag</span>
               <span>Tamanho</span>
               <span>Modificado</span>
-              <span></span>
+              <span></span> 
             </div>
-
+            
             <div className={styles.listBody}>
               {uploadsMock.map(file => (
                 <UploadCard

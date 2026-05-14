@@ -24,7 +24,6 @@
   display: block;
 }
 
-
 .ctdSidebar {
   display: flex;       
   flex-direction: column;
@@ -65,21 +64,6 @@
   height: 18px;
 }
 
-.navnew{
-  margin-top: auto;
-  color: #FAFAFA;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 12px;
-  border: none;
-  background: #2564ED;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 20px;
-  text-align: center;
-  transition: background 0.2s, color 0.2s;
-}
-
 .btn:hover {
   background: #f0f0f0;
 }
@@ -101,4 +85,98 @@
   border-radius: 6px;
   font-weight: bold;
   text-decoration: none;
+}
+
+/* =========================================
+   👇 NOVO: Estilos do Botão e Dropdown
+   ========================================= */
+
+/* Wrapper que mantém o botão no final e posiciona o menu */
+.novoWrapper {
+  position: relative;
+  margin-top: auto; /* Mantém o botão colado na base da sidebar */
+  width: 100%;
+}
+
+/* Botão Novo + (mantido quase igual ao seu, com ajuste de width) */
+.navnew {
+  width: 100%;
+  color: #FAFAFA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: none;
+  background: #2564ED;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navnew:hover {
+  background: #1d4ed8;
+}
+
+/* Menu Dropdown (abre acima do botão) */
+.novoMenu {
+  position: absolute;
+  bottom: calc(100% + 8px); /* Sobe para cima com espaçamento */
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 4px 0;
+  z-index: 50;
+  overflow: hidden;
+  animation: fadeInUp 0.15s ease-out;
+}
+
+.novoMenu button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  text-align: left;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+/* ✨ Estilização dos ícones (react-icons) */
+.novoMenu button svg {
+  width: 18px;
+  height: 18px;
+  color: #6b7280;
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+
+.novoMenu button:hover {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.novoMenu button:hover svg {
+  color: #2563eb;
+}
+
+/* Animação suave de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
