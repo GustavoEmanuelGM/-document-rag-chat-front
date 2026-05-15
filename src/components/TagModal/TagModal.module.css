@@ -1,0 +1,42 @@
+.overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  backdrop-filter: blur(2px);
+}
+
+.modal {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.modal h3 { margin: 0 0 20px 0; font-size: 18px; font-weight: 600; }
+.field { margin-bottom: 16px; }
+.field label { display: block; font-size: 13px; font-weight: 500; color: #374151; margin-bottom: 6px; }
+.field input, .field textarea {
+  width: 100%; padding: 10px 12px; border: 1px solid #d1d5db; border-radius: 8px;
+  font-size: 14px; outline: none; transition: border-color 0.2s; box-sizing: border-box;
+}
+.field input:focus, .field textarea:focus { border-color: #2563eb; }
+
+.colorPicker { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.colorOption { width: 28px; height: 28px; border-radius: 50%; border: 2px solid transparent; cursor: pointer; transition: transform 0.1s; }
+.colorOption:hover { transform: scale(1.1); }
+.colorOption.selected { border-color: #111827; box-shadow: 0 0 0 2px #fff, 0 0 0 4px #2563eb; }
+.customColor { width: 28px; height: 28px; padding: 0; border: none; border-radius: 50%; cursor: pointer; overflow: hidden; }
+.customColor::-webkit-color-swatch-wrapper { padding: 0; }
+.customColor::-webkit-color-swatch { border: none; border-radius: 50%; }
+
+.actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; }
+.cancelBtn { padding: 10px 16px; background: #f3f4f6; border: none; border-radius: 8px; font-size: 14px; cursor: pointer; color: #374151; }
+.cancelBtn:hover { background: #e5e7eb; }
+.saveBtn { padding: 10px 16px; background: #2563eb; color: #fff; border: none; border-radius: 8px; font-size: 14px; font-weight: 500; cursor: pointer; }
+.saveBtn:hover { background: #1d4ed8; }

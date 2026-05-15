@@ -5,6 +5,7 @@ import Documentos from "./pages/Documentos";
 import Sidebar from "./components/sidebar";
 import "./App.css"
 import Header from "./components/Header";
+import TagManager from "./pages/TagManager/TagManager";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/documentos" element={<Documentos />} />
-            <Route path="/tags" element={<Tags />} />
+            <Route path="/tags" element={<TagManager />} />
           </Routes>
         </div>
       </div>

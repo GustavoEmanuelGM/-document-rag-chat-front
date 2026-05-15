@@ -1,0 +1,225 @@
+.container {
+  padding: 24px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.header span {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.btnPrimary {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btnPrimary:hover { background: #1d4ed8; }
+
+/* LISTA (Versão Compacta) */
+.list {
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: visible;
+}
+
+.listHeader {
+  display: grid;
+  /* Nome | Descrição | Etiqueta | Qtd. Arquivos | Ações */
+  justify-items: center;
+  grid-template-columns: 1fr 2fr 150px 150px 100px;
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e7eb;
+  background: #fafafa;
+  color: #6b7280;
+}
+
+.listItem {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 2fr 150px 150px 100px;
+  align-items: center;
+  padding: 0 16px;
+  height: 48px; 
+  border-bottom: 1px solid #f3f4f6;
+  transition: background-color 0.2s;
+}
+
+.listItem:hover { background-color: #f9fafb; }
+.listItem:last-child { border-bottom: none; }
+
+/* Células */
+.nameCell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #111827;
+}
+
+.colorDot {
+  width: 12px; /* Menor */
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.descCell {
+  font-size: 13px;
+  color: #6b7280;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tagCell {
+  display: flex;
+  align-items: center;
+}
+
+.countCell {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.actionsCell {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btnMenu {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+.btnMenu:hover {
+  background: #f3f4f6;
+}
+
+/* Se preferir botões Editar/Excluir compactos em vez de menu ... */
+.btnEdit, .btnDelete {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+  margin-left: 6px;
+}
+
+.btnEdit {
+  background: #f3f4f6;
+  color: #374151;
+}
+.btnEdit:hover { background: #e5e7eb; }
+
+.btnDelete {
+  background: #fff;
+  color: #ef4444;
+  border-color: #fecaca;
+}
+.btnDelete:hover { background: #fef2f2; border-color: #fca5a5; }
+
+
+/* Ajuste para posicionar o dropdown */
+.actionsCell {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btnMenu {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: background 0.2s;
+}
+
+.btnMenu:hover {
+  background: #f3f4f6;
+}
+
+/* Dropdown Menu */
+.dropdownMenu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin-top: 4px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 4px 0;
+  min-width: 100px;
+  z-index: 10;
+}
+
+.dropdownMenu button {
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 13px;
+  color: #374151;
+}
+
+.dropdownMenu button:hover { 
+  background: #f3f4f6; 
+}
+
+.dropdownMenu .deleteOption { 
+  color: #ef4444; 
+}
+
+.dropdownMenu .deleteOption:hover { 
+  background: #fef2f2; 
+}
